@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-14T11:41:04.229869" rpa="false" schemaversion="5">
+<suite id="s1" name="Calculator Test" source="C:\Users\Administrateur\Documents\Appium\tests\calculator_test.robot">
+<test id="s1-t1" name="Test Open Calculator" line="15">
+<kw name="Open Calculator">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-03-14T11:41:04.383178" elapsed="4.076397"/>
+</kw>
+<status status="PASS" start="2025-03-14T11:41:04.382729" elapsed="4.076954"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-14T11:41:11.461346" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-14T11:41:08.460291" elapsed="3.001240"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-14T11:41:11.463843" level="INFO">Clicking element 'id=com.google.android.calculator:id/digit_7'.</msg>
+<msg time="2025-03-14T11:41:12.121086" level="INFO">criteria is com.google.android.calculator:id/digit_7</msg>
+<arg>id=com.google.android.calculator:id/digit_7</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-14T11:41:11.462055" elapsed="0.659149"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-14T11:41:12.122251" level="INFO">Clicking element 'id=com.google.android.calculator:id/op_add'.</msg>
+<msg time="2025-03-14T11:41:12.721716" level="INFO">criteria is com.google.android.calculator:id/op_add</msg>
+<arg>id=com.google.android.calculator:id/op_add</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-14T11:41:12.121540" elapsed="0.600253"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-14T11:41:12.722772" level="INFO">Clicking element 'id=com.google.android.calculator:id/digit_8'.</msg>
+<msg time="2025-03-14T11:41:13.340203" level="INFO">criteria is com.google.android.calculator:id/digit_8</msg>
+<arg>id=com.google.android.calculator:id/digit_8</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-14T11:41:12.722078" elapsed="0.618211"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-14T11:41:13.341954" level="INFO">Clicking element 'id=com.google.android.calculator:id/eq'.</msg>
+<msg time="2025-03-14T11:41:14.121070" level="INFO">criteria is com.google.android.calculator:id/eq</msg>
+<arg>id=com.google.android.calculator:id/eq</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-14T11:41:13.340875" elapsed="0.780328"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2025-03-14T11:41:14.185747" level="INFO">Element 'id=com.google.android.calculator:id/result_final' text is '15' </msg>
+<msg time="2025-03-14T11:41:14.185799" level="INFO">criteria is com.google.android.calculator:id/result_final</msg>
+<msg time="2025-03-14T11:41:14.185854" level="INFO">${result} = 15</msg>
+<var>${result}</var>
+<arg>id=com.google.android.calculator:id/result_final</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2025-03-14T11:41:14.121518" elapsed="0.064352"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Le résultat est : ${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-14T11:41:14.186130" elapsed="0.000350"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>15</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-03-14T11:41:14.186647" elapsed="0.000164"/>
+</kw>
+<doc>Ouvrir l'application calculatrice</doc>
+<status status="PASS" start="2025-03-14T11:41:04.381660" elapsed="9.805402"/>
+</test>
+<status status="PASS" start="2025-03-14T11:41:04.230890" elapsed="9.956934"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Calculator Test" id="s1" pass="1" fail="0" skip="0">Calculator Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
