@@ -1,0 +1,14 @@
+Pour Lancer Appium : 
+
+Lancer le server --> Invite de commande, on tape appium
+Lancer l'émulateur --> 
+	* soit l'exécutable,
+	* Soit invite de commande : emulator -list-avds (pour afficher la liste des matériels)
+
+				    emulator -avd nom_du_materiel
+
+
+Installation APK:
+
+On télécharge l'APK, que lon met dans le dossier ADB "Plateform-tools" (chemin C:\Users\Administrateur\AppData\Local\Android\Sdk
+On lance un invite de commande et on tape : adb install Nom_De_APK
