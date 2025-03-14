@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-14T16:51:18.878125" rpa="false" schemaversion="5">
+<suite id="s1" name="Apidemo" source="C:\Users\Administrateur\Documents\Appium\ApiDemo\tests\apidemo.robot">
+<test id="s1-t1" name="Test Open Calculator" line="15">
+<kw name="Open ApiDemos">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-03-14T16:51:19.035297" elapsed="5.381368"/>
+</kw>
+<status status="PASS" start="2025-03-14T16:51:19.034878" elapsed="5.381994"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-14T16:51:27.417943" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-14T16:51:24.417205" elapsed="3.001033"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-14T16:51:27.420846" level="INFO">Clicking element 'XPath=//android.widget.TextView[@content-desc="Views"]'.</msg>
+<msg time="2025-03-14T16:51:29.400328" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Views"]</msg>
+<arg>XPath=//android.widget.TextView[@content-desc="Views"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-14T16:51:27.419067" elapsed="1.981414"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-14T16:51:29.402311" level="INFO">Clicking element 'XPath=//android.widget.TextView[@content-desc="Animation"]'.</msg>
+<msg time="2025-03-14T16:51:30.909434" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Animation"]</msg>
+<arg>XPath=//android.widget.TextView[@content-desc="Animation"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-14T16:51:29.401039" elapsed="1.508463"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-14T16:51:30.910600" level="INFO">Clicking element 'XPath=//android.widget.TextView[@content-desc="Push"]'.</msg>
+<msg time="2025-03-14T16:51:32.399743" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Push"]</msg>
+<arg>XPath=//android.widget.TextView[@content-desc="Push"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-14T16:51:30.909835" elapsed="1.490075"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-03-14T16:51:32.470434" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Freedom"]</msg>
+<arg>xpath=//android.widget.TextView[@content-desc="Freedom"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-03-14T16:51:32.400543" elapsed="0.069957"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2025-03-14T16:51:32.516845" level="INFO">Element 'xpath=//android.widget.TextView[@content-desc="Freedom"]' text is 'Freedom' </msg>
+<msg time="2025-03-14T16:51:32.516901" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Freedom"]</msg>
+<msg time="2025-03-14T16:51:32.516953" level="INFO">${texte1} = Freedom</msg>
+<var>${texte1}</var>
+<arg>xpath=//android.widget.TextView[@content-desc="Freedom"]</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2025-03-14T16:51:32.470759" elapsed="0.046209"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>le texte doit être ${texte1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-14T16:51:32.517204" elapsed="0.000339"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-03-14T16:51:33.776131" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="is nothing else but"]
+xpath criteria: //android.widget.TextView[@content-desc="is nothing else but"]
+xpath criteria: //android.widget.TextView[@content-desc="is nothing else but"]
+xpath criteria: //android.widget.TextView[@content-desc="is nothing else but"]</msg>
+<arg>xpath=//android.widget.TextView[@content-desc="is nothing else but"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-03-14T16:51:32.517691" elapsed="1.258505"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2025-03-14T16:51:33.817364" level="INFO">Element 'xpath=//android.widget.TextView[@content-desc="is nothing else but"]' text is 'is nothing else but' </msg>
+<msg time="2025-03-14T16:51:33.817418" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="is nothing else but"]</msg>
+<msg time="2025-03-14T16:51:33.817471" level="INFO">${texte2} = is nothing else but</msg>
+<var>${texte2}</var>
+<arg>xpath=//android.widget.TextView[@content-desc="is nothing else but"]</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2025-03-14T16:51:33.776477" elapsed="0.041010"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>le texte doit être ${texte2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-14T16:51:33.817795" elapsed="0.000479"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-03-14T16:51:35.801130" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="a chance to be better."]
+xpath criteria: //android.widget.TextView[@content-desc="a chance to be better."]
+xpath criteria: //android.widget.TextView[@content-desc="a chance to be better."]
+xpath criteria: //android.widget.TextView[@content-desc="a chance to be better."]
+xpath criteria: //android.widget.TextView[@content-desc="a chance to be better."]
+xpath criteria: //android.widget.TextView[@content-desc="a chance to be better."]
+xpath criteria: //android.widget.TextView[@content-desc="a chance to be better."]</msg>
+<arg>xpath=//android.widget.TextView[@content-desc="a chance to be better."]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-03-14T16:51:33.818415" elapsed="1.982775"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2025-03-14T16:51:35.851577" level="INFO">Element 'xpath=//android.widget.TextView[@content-desc="a chance to be better."]' text is 'a chance to be better.' </msg>
+<msg time="2025-03-14T16:51:35.851629" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="a chance to be better."]</msg>
+<msg time="2025-03-14T16:51:35.851674" level="INFO">${texte3} = a chance to be better.</msg>
+<var>${texte3}</var>
+<arg>xpath=//android.widget.TextView[@content-desc="a chance to be better."]</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2025-03-14T16:51:35.801667" elapsed="0.050021"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>le texte doit être ${texte3}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-14T16:51:35.852041" elapsed="0.000530"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-03-14T16:51:37.797982" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="— Albert Camus"]
+xpath criteria: //android.widget.TextView[@content-desc="— Albert Camus"]
+xpath criteria: //android.widget.TextView[@content-desc="— Albert Camus"]
+xpath criteria: //android.widget.TextView[@content-desc="— Albert Camus"]
+xpath criteria: //android.widget.TextView[@content-desc="— Albert Camus"]
+xpath criteria: //android.widget.TextView[@content-desc="— Albert Camus"]
+xpath criteria: //android.widget.TextView[@content-desc="— Albert Camus"]</msg>
+<arg>xpath=//android.widget.TextView[@content-desc="— Albert Camus"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-03-14T16:51:35.852816" elapsed="1.945368"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2025-03-14T16:51:37.849733" level="INFO">Element 'xpath=//android.widget.TextView[@content-desc="— Albert Camus"]' text is '— Albert Camus' </msg>
+<msg time="2025-03-14T16:51:37.849787" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="— Albert Camus"]</msg>
+<msg time="2025-03-14T16:51:37.849855" level="INFO">${texte4} = — Albert Camus</msg>
+<var>${texte4}</var>
+<arg>xpath=//android.widget.TextView[@content-desc="— Albert Camus"]</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2025-03-14T16:51:37.798635" elapsed="0.051238"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>le texte doit être ${texte4}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-14T16:51:37.850137" elapsed="0.000376"/>
+</kw>
+<doc>Ouvrir l'application ApiDemo</doc>
+<status status="PASS" start="2025-03-14T16:51:19.034323" elapsed="18.816394"/>
+</test>
+<status status="PASS" start="2025-03-14T16:51:18.879212" elapsed="18.971945"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Apidemo" id="s1" pass="1" fail="0" skip="0">Apidemo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

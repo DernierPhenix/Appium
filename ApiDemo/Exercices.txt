@@ -1,0 +1,7 @@
+Ouvrez l’application ApiDemo
+ 
+View animation push > Sélectionne hyperspace et retranscrit les messages affichés 
+ 
+Ensuite chronomètre commencez le et changer le format, assurez vous que le format a changer mais que le chronomètre tourne encore
+ 
+Seek bar mettez la à 88
