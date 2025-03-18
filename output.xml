@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-17T16:47:18.039196" rpa="false" schemaversion="5">
+<suite id="s1" name="Apidemo" source="c:\Users\Administrateur\Documents\Appium\ApiDemo\tests\apidemo.robot">
+<test id="s1-t1" name="F" line="42">
+<kw name="Given the ApiDemo application is open" owner="keywords">
+<kw name="Open ApiDemos">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-03-17T16:47:18.208561" elapsed="6.304952"/>
+</kw>
+<status status="PASS" start="2025-03-17T16:47:18.208074" elapsed="6.305728"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-17T16:47:27.514947" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-17T16:47:24.513948" elapsed="3.003560"/>
+</kw>
+<doc>Ouvrir l'application ApiDemo</doc>
+<status status="PASS" start="2025-03-17T16:47:18.207545" elapsed="9.310266"/>
+</kw>
+<kw name="When I click on &quot;Views&quot;" owner="keywords">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-17T16:47:27.520856" level="INFO">Clicking element 'XPath=//android.widget.TextView[@content-desc="Views"]'.</msg>
+<msg time="2025-03-17T16:47:29.253017" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Views"]</msg>
+<arg>XPath=//android.widget.TextView[@content-desc="Views"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-17T16:47:27.519541" elapsed="1.734143"/>
+</kw>
+<doc>Cliquer sur "Views"</doc>
+<status status="PASS" start="2025-03-17T16:47:27.518941" elapsed="1.734878"/>
+</kw>
+<kw name="And I click on &quot;Chronometer&quot;" owner="keywords">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-17T16:47:29.255643" level="INFO">Clicking element 'xpath=//android.widget.TextView[@content-desc="Chronometer"]'.</msg>
+<msg time="2025-03-17T16:47:30.677154" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Chronometer"]</msg>
+<arg>xpath=//android.widget.TextView[@content-desc="Chronometer"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-17T16:47:29.254572" elapsed="1.422866"/>
+</kw>
+<doc>Cliquer sur "Chronometer"</doc>
+<status status="PASS" start="2025-03-17T16:47:29.254291" elapsed="1.423336"/>
+</kw>
+<kw name="Then I click on the &quot;Start&quot; button" owner="keywords">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-17T16:47:30.679577" level="INFO">Clicking element 'id=io.appium.android.apis:id/start'.</msg>
+<msg time="2025-03-17T16:47:30.812665" level="INFO">criteria is io.appium.android.apis:id/start</msg>
+<arg>id=io.appium.android.apis:id/start</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-17T16:47:30.678680" elapsed="0.134183"/>
+</kw>
+<doc>Cliquer sur le bouton "Start"</doc>
+<status status="PASS" start="2025-03-17T16:47:30.678342" elapsed="0.134636"/>
+</kw>
+<kw name="And I retrieve the current time from the chronometer" owner="keywords">
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2025-03-17T16:47:31.331122" level="INFO">Element 'id=io.appium.android.apis:id/chronometer' text is 'Initial format: 00:01' </msg>
+<msg time="2025-03-17T16:47:31.331341" level="INFO">criteria is io.appium.android.apis:id/chronometer</msg>
+<msg time="2025-03-17T16:47:31.331466" level="INFO">${recup_time} = Initial format: 00:01</msg>
+<var>${recup_time}</var>
+<arg>id=io.appium.android.apis:id/chronometer</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2025-03-17T16:47:30.813796" elapsed="0.517728"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>le temps est ${recup_time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-17T16:47:31.331658" elapsed="0.000426"/>
+</kw>
+<doc>Récupérer l'heure actuelle du chronomètre</doc>
+<status status="PASS" start="2025-03-17T16:47:30.813491" elapsed="0.518708"/>
+</kw>
+<kw name="And I log the time as &quot;The time is ${chrono_depart}&quot;">
+<msg time="2025-03-17T16:47:31.333558" level="FAIL">No keyword with name 'And I log the time as "The time is ${chrono_depart}"' found.</msg>
+<status status="FAIL" start="2025-03-17T16:47:31.333451" elapsed="0.000977">No keyword with name 'And I log the time as "The time is ${chrono_depart}"' found.</status>
+</kw>
+<kw name="When I click on &quot;Set format string&quot;" owner="keywords">
+<doc>Cliquer sur "Set format string"</doc>
+<status status="NOT RUN" start="2025-03-17T16:47:31.334936" elapsed="0.000098"/>
+</kw>
+<kw name="Then I retrieve the time after changing format from the chronometer" owner="keywords">
+<doc>Récupérer l'heure après le changement de format du chronomètre</doc>
+<status status="NOT RUN" start="2025-03-17T16:47:31.335333" elapsed="0.000094"/>
+</kw>
+<kw name="And I log the time as &quot;The time is ${chrono_fin}&quot;">
+<status status="NOT RUN" start="2025-03-17T16:47:31.335775" elapsed="0.000067"/>
+</kw>
+<kw name="And I compare the time before and after the format change" owner="keywords">
+<doc>Comparer l'heure avant et après le changement de format</doc>
+<status status="NOT RUN" start="2025-03-17T16:47:31.336406" elapsed="0.000095"/>
+</kw>
+<status status="FAIL" start="2025-03-17T16:47:18.206742" elapsed="13.130552">No keyword with name 'And I log the time as "The time is ${chrono_depart}"' found.</status>
+</test>
+<status status="FAIL" start="2025-03-17T16:47:18.042455" elapsed="13.296150"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Apidemo" id="s1" pass="0" fail="1" skip="0">Apidemo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

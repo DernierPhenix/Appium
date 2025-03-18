@@ -14,7 +14,7 @@ On télécharge l'APK, que lon met dans le dossier ADB "Plateform-tools" (chemin
 On lance un invite de commande et on tape : adb install Nom_De_APK
 
 adb shell pm list packages --> permet de trouver la list des package pour la configuration du JSON dans appium inspector
-
+adb shel cmd package resolve-activity nomDeTonAppPackage (Qui commence par .com) & non package --> permet d'afficher le nom de l'AppActivity pour mettre dans le JSON. Se trouve au début avec l'ID Name
 
 Étapes pour automatiser une api ou un site
 
@@ -22,3 +22,14 @@ adb shell pm list packages --> permet de trouver la list des package pour la con
 2 - Comprendre le besoin
 3 - Le faire manuellement
 4 - Le retranscrire au robot (le comportement)
+
+
+QUAND ON CHANGE DE MATÉRIEL : 
+	- On vérifie, dans le JSON, la version de l'OS
+	- On vérifie que l'application est bien présente dans le répertoire \Plateform-tools
+	- Dans un invite de commande on tape la commande adb install Nom_De_API.apk POUR INSTALLER l'API SUR LE NOUVEAU TÉLÉPHONE
+	- On lance le JSON dans APPIUM INNSPECTOR en cliquant sur "Start Session"
+
+ATTENTION : EN CAS DE CHANGEMENT D'UN MATÉRIEL, NE PAS OUBLIER DE CHANGER LES VARIABLES CORRESPONDANTES AUX VALEURS DANS LE JSON
+
+Commande : adb devices --> Permet de voir le nom due l'emulateur indépendamment du matériel utilisé.

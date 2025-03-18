@@ -4,4 +4,5 @@ View animation push > Sélectionne hyperspace et retranscrit les messages affich
  
 Ensuite chronomètre commencez le et changer le format, assurez vous que le format a changer mais que le chronomètre tourne encore
  
-Seek bar mettez la à 88
+Ensuite on scroll dans view pour atteindre "seek bar", mettez la à 88
+ 
