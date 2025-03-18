@@ -12,5 +12,4 @@ ${APP_ACTIVITY}    .ApiDemos
 ${AUTOMATION_NAME}    UiAutomator2
 
 
-# ${chrono_depart}    id=io.appium.android.apis:id/chronometer
-# ${chrono_fin}    id=io.appium.android.apis:id/chronometer
+# ${chrono_depart}    id=io.appium.android
